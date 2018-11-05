@@ -1,0 +1,84 @@
+﻿.dvMain {
+    margin:0px;
+    width:800px;
+}
+
+.divFindPane_ScBody {
+    height:400px;
+
+}
+
+.divScBody {
+    width:400px;
+    overflow:auto;
+    border:1px solid #FBA301;
+    padding:5px;
+}
+
+.divFindPane {
+    width:387px; 
+    overflow:auto;
+    border:1px solid #FBA301;
+    font-size:11pt;
+    padding:5px;
+    font-family:Verdana;
+}
+
+.FindPaneData {
+    border:1px solid silver;
+    width:230px;
+    height:25px;
+    padding-left:5px;
+    padding-right:5px;
+    color:red;
+}
+
+
+.FindPaneLabel {
+    font-weight:bold;
+    color:#666;
+
+}
+
+
+.Hspacer {
+    height:15px;
+}
+
+.Hspacer2 {
+    height:45px;
+}
+
+.ButtonMedium
+{
+    border: 1px solid #C3C3C3;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #EFEFEF;
+    color: #646464;
+    height: 30px;
+}
+.ButtonMedium:hover
+{
+    background-color: #FFFFFF;
+}
+
+.ToolButton {
+    width:113px !important;
+}
+
+.ScBodyWorkAreaFieldTitle{
+    padding:5px;
+    background-color:#6186BD;
+    color:White;
+    border:1px solid #6186BD;
+    font-weight:bold;
+}
+
+.ScBodyWorkAreaFieldContent {
+    padding-top:5px;
+}
+
+.ScMistakes{
+    border-bottom:1px dashed red;
+}

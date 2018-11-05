@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B831DD3-1348-4C54-A67A-736D16FEAFDE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpellCheck</RootNamespace>
+    <AssemblyName>SpellCheck</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="_Library, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\02-tan-02\OryxV4Libraries\Debug\_Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dictionary\Collins\a.txt" />
+    <Content Include="Dictionary\Collins\b.txt" />
+    <Content Include="Dictionary\Collins\c.txt" />
+    <Content Include="Dictionary\Collins\d.txt" />
+    <Content Include="Dictionary\Collins\e.txt" />
+    <Content Include="Dictionary\Collins\f.txt" />
+    <Content Include="Dictionary\Collins\g.txt" />
+    <Content Include="Dictionary\Collins\h.txt" />
+    <Content Include="Dictionary\Collins\i.txt" />
+    <Content Include="Dictionary\Collins\j.txt" />
+    <Content Include="Dictionary\Collins\k.txt" />
+    <Content Include="Dictionary\Collins\l.txt" />
+    <Content Include="Dictionary\Collins\m.txt" />
+    <Content Include="Dictionary\Collins\n.txt" />
+    <Content Include="Dictionary\Collins\o.txt" />
+    <Content Include="Dictionary\Collins\p.txt" />
+    <Content Include="Dictionary\Collins\q.txt" />
+    <Content Include="Dictionary\Collins\r.txt" />
+    <Content Include="Dictionary\Collins\s.txt" />
+    <Content Include="Dictionary\Collins\t.txt" />
+    <Content Include="Dictionary\Collins\u.txt" />
+    <Content Include="Dictionary\Collins\v.txt" />
+    <Content Include="Dictionary\Collins\w.txt" />
+    <Content Include="Dictionary\Collins\x.txt" />
+    <Content Include="Dictionary\Collins\y.txt" />
+    <Content Include="Dictionary\Collins\z.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\a.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\b.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\c.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\d.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\e.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\f.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\g.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\h.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\i.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\j.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\k.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\l.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\m.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\n.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\non-az.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\o.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\p.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\q.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\r.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\s.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\t.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\u.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\v.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\w.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\x.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\y.txt" />
+    <Content Include="Dictionary\Dictionary Source\Collins\z.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\A.html" />
+    <Content Include="Dictionary\UK\a.txt" />
+    <Content Include="Dictionary\UK\b.txt" />
+    <Content Include="Dictionary\UK\c.txt" />
+    <Content Include="Dictionary\UK\d.txt" />
+    <Content Include="Dictionary\UK\e.txt" />
+    <Content Include="Dictionary\UK\f.txt" />
+    <Content Include="Dictionary\UK\g.txt" />
+    <Content Include="Dictionary\UK\h.txt" />
+    <Content Include="Dictionary\UK\i.txt" />
+    <Content Include="Dictionary\UK\j.txt" />
+    <Content Include="Dictionary\UK\k.txt" />
+    <Content Include="Dictionary\UK\l.txt" />
+    <Content Include="Dictionary\UK\m.txt" />
+    <Content Include="Dictionary\UK\n.txt" />
+    <Content Include="Dictionary\UK\o.txt" />
+    <Content Include="Dictionary\UK\p.txt" />
+    <Content Include="Dictionary\UK\q.txt" />
+    <Content Include="Dictionary\UK\r.txt" />
+    <Content Include="Dictionary\UK\s.txt" />
+    <Content Include="Dictionary\UK\t.txt" />
+    <Content Include="Dictionary\UK\u.txt" />
+    <Content Include="Dictionary\UK\v.txt" />
+    <Content Include="Dictionary\UK\w.txt" />
+    <Content Include="Dictionary\UK\x.txt" />
+    <Content Include="Dictionary\UK\y.txt" />
+    <Content Include="Dictionary\UK\z.txt" />
+    <Content Include="Dictionary\US\a.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\B.html" />
+    <Content Include="Dictionary\US\b.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\C.html" />
+    <Content Include="Dictionary\US\c.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\D.html" />
+    <Content Include="Dictionary\US\d.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\E.html" />
+    <Content Include="Dictionary\US\e.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\F.html" />
+    <Content Include="Dictionary\US\f.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\G.html" />
+    <Content Include="Dictionary\US\g.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\H.html" />
+    <Content Include="Dictionary\US\h.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\I.html" />
+    <Content Include="Dictionary\US\i.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\J.html" />
+    <Content Include="Dictionary\US\j.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\K.html" />
+    <Content Include="Dictionary\US\k.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\L.html" />
+    <Content Include="Dictionary\US\l.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\M.html" />
+    <Content Include="Dictionary\US\m.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\N.html" />
+    <Content Include="Dictionary\US\n.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\O.html" />
+    <Content Include="Dictionary\US\o.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\P.html" />
+    <Content Include="Dictionary\US\p.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\Q.html" />
+    <Content Include="Dictionary\US\q.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\R.html" />
+    <Content Include="Dictionary\US\r.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\S.html" />
+    <Content Include="Dictionary\US\s.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\source.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\T.html" />
+    <Content Include="Dictionary\US\t.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\U.html" />
+    <Content Include="Dictionary\US\u.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\V.html" />
+    <Content Include="Dictionary\US\v.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\W.html" />
+    <Content Include="Dictionary\US\w.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\X.html" />
+    <Content Include="Dictionary\US\x.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\Y.html" />
+    <Content Include="Dictionary\US\y.txt" />
+    <Content Include="Dictionary\Dictionary Source\US\Z.html" />
+    <Content Include="Dictionary\US\z.txt" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\loading3.gif" />
+    <Content Include="LoadTest.aspx" />
+    <Content Include="Sc.aspx" />
+    <Content Include="scripts\jquery-ui.min.js" />
+    <Content Include="scripts\ScFr.js" />
+    <Content Include="scripts\common.js" />
+    <Content Include="scripts\jquery-1.8.0.min.js" />
+    <Content Include="scripts\ScV2.js" />
+    <Content Include="scripts\ScV3.js" />
+    <Content Include="ScV2.aspx" />
+    <Content Include="ScV3.aspx" />
+    <Content Include="styles\definition.css" />
+    <Content Include="styles\FindReplace.css" />
+    <Content Include="styles\jquery-ui.css" />
+    <Content Include="styles\ScV2.css" />
+    <Content Include="styles\Scv3.css" />
+    <Content Include="UC\UcFindReplaceSpelling.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\oDomain.cs" />
+    <Compile Include="AppCode\webConfig.cs" />
+    <Compile Include="LoadTest.aspx.cs">
+      <DependentUpon>LoadTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoadTest.aspx.designer.cs">
+      <DependentUpon>LoadTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppCode\SpellChecker.cs" />
+    <Compile Include="Sc.aspx.cs">
+      <DependentUpon>Sc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sc.aspx.designer.cs">
+      <DependentUpon>Sc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScV2.aspx.cs">
+      <DependentUpon>ScV2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScV2.aspx.designer.cs">
+      <DependentUpon>ScV2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScV3.aspx.cs">
+      <DependentUpon>ScV3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScV3.aspx.designer.cs">
+      <DependentUpon>ScV3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Suggest.ashx.cs">
+      <DependentUpon>Suggest.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcFindReplaceSpelling.ascx.cs">
+      <DependentUpon>UcFindReplaceSpelling.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UcFindReplaceSpelling.ascx.designer.cs">
+      <DependentUpon>UcFindReplaceSpelling.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Suggest.ashx" />
+    <Content Include="Dictionary\Dictionary Source\US\Dictionary.dat" />
+    <Content Include="Dictionary\Dictionary Source\UK\Telerik_RadSpell_en-GB.tdf" />
+    <Content Include="Dictionary\Dictionary Source\UK\AspNetSpell.com_EnglishUK_Modified.dic" />
+    <Content Include="Dictionary\Dictionary Source\UK\Copy of AspNetSpell.com_EnglishUK.dic" />
+    <Content Include="Collins.ashx" />
+    <None Include="Properties\PublishProfiles\SpellCheck.pubxml" />
+    <None Include="Properties\PublishProfiles\TFSbs-SpellCheck.pubxml" />
+    <Content Include="scripts\jquery.ba-replacetext.js" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CollinsApi\IDM.SkPublish.API\IDM.SkPublish.API.csproj">
+      <Project>{add77b69-d71c-4384-9166-0a32cfee3f3a}</Project>
+      <Name>IDM.SkPublish.API</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>40045</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://OryxV4/SpellCheck</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

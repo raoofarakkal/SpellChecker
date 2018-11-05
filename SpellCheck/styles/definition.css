@@ -1,0 +1,196 @@
+﻿.PriorityTopic{
+    color:#0494d3  !important;
+    font-weight:bold !important;
+}
+
+.NonPriorityTopic{
+    color:black !important;
+    font-weight:normal !important;
+}
+
+.StatusBar{
+    color: rgb(134, 134, 134);
+    background-color: #F3F3F3;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.StatusBarRemainingE {
+    color:red;
+}
+
+.StatusBarTable{
+    width:100%;
+}
+
+.StatusBarTableTdW{
+    /*padding-left:5px;*/
+    width:33%;
+    text-align:center;
+}
+
+.StatusBarTableTdC{
+    width:34%;
+    text-align:center;
+    border-left:1px solid white;
+    border-right:1px solid white;
+}
+
+.StatusBarTableTdR{
+    /*padding-right:5px;*/
+    width:33%;
+    text-align:center;
+}
+
+.RelatedArticleList{
+    float:left;
+    border-radius: 10px;
+    border: 1px solid #bebebe;
+    max-height: 200px;
+    padding: 10px;
+    background-color: #fff;
+    overflow:auto;
+}
+.RelatedArticleList ul {
+    list-style-type:square;
+    line-height: 20px;
+    padding-left: 20px !important;
+}
+
+.RelatedArticleList ul li{
+    margin-bottom:5px;
+}
+
+.RelatedArticleListButton{
+    float:left;
+}
+.ExternalDataList{
+    float:left;
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+    padding:5px;
+    background-color: #fff;
+    overflow:auto;
+    min-width: 30px;
+    min-height:10px;
+}
+.hLine{
+    height:1px;
+    border-top:1px solid #6186BD;
+}
+
+.SpellcheckContextMenu{
+    border:2px solid #6186BD;
+    background-color:white;
+    width:350px;
+    position:absolute;
+    z-index:3;
+}
+
+.SpellcheckContextMenuHd{
+     background-color:#6186BD;
+     padding:5px;
+     color:white;
+     font-weight:bold;
+}
+.SpellcheckContextMenuItemContainer{
+    max-height:200px;
+    overflow:auto;
+}
+.SpellcheckContextMenuItem{
+    margin:5px;
+    padding:3px;
+    cursor:pointer;
+}
+
+.SpellcheckContextMenuItem:hover{
+    background-color:#98CFF3;
+}
+.SpellcheckContextMenuItemNc{
+    margin:5px;
+    padding:3px;
+}
+
+
+/*start*/
+.SpellcheckContextMenu{
+    border:2px solid #6186BD;
+    background-color:white;
+    width:400px;
+    position:absolute;
+    z-index:3;
+}
+
+.SpellcheckContextMenuItem{position:relative;}
+ .spellCheckerWordContainer .defineWord a{
+    color:#6186BD;
+    text-decoration: none;
+    position:absolute;
+    right:20px;
+    top:4px;
+ }
+ .spellCheckerWordContainer .defineWord a:hover{
+    text-decoration: underline; 
+ }
+
+ .spellCheckerWordContainer .defineWordContent{
+    background-color: #E8E5E5;
+    padding:8px;
+    max-height: 83px;
+    /*overflow-x: scroll;*/
+    overflow-y: scroll;
+    margin: 5px;
+    margin-top: -2px;
+ }
+.defineWordContent{display:none;}
+h1.hwd {
+    margin: 0;
+}
+.defineWord{display:none;}
+.SpellcheckContextMenuItemNc input#scCustRepl  {
+    height: 27px !important;
+    width: 287px;
+}
+div#incongruity_1 {
+    font-family: Arial;
+    font-size: 12px;
+}
+.selected{
+     background-color: #98CFF3;
+}
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #4B7FA0;
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    /*display:none;*/
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #4B7FA0;
+    position: absolute;
+    right: 5px;
+    top: 12px;
+}
+/*end*/
+
+
+
+
+
+
+
+
+
+
+

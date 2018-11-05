@@ -1,0 +1,88 @@
+﻿.ScWorkArea{
+    overflow:auto;
+    height:360px;
+    padding:5px;
+}
+
+.ScBodyWorkAreaFieldTitle{
+    padding:5px;
+    background-color:#98CFF3;
+    color:White;
+    border:1px solid #6186BD;
+    font-weight:bold;
+}
+
+.ScBodyWorkAreaFieldContent {
+    padding-top:5px;
+}
+
+.ScToolbar{
+    border-top:1px solid #6186BD;
+    padding: 10px;
+}
+
+.ScToolbarItem
+{
+    float:left;
+}
+
+.ScProgressbar {
+    margin-top:07px;
+}
+
+.ButtonMedium
+{
+    border: 1px solid #C3C3C3;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #EFEFEF;
+    color: #646464;
+    height: 30px;
+}
+.ButtonMedium:hover
+{
+    background-color: #FFFFFF;
+}
+
+.ToolButton {
+    width:113px !important;
+}
+
+.ScMistakes{
+    border-bottom:2px double red;
+    cursor:pointer;
+}
+
+.ScResolved{
+    border-bottom:2px double green !important;
+    cursor:auto !important;
+}
+
+.ScAdded2Dic{
+    border-bottom:2px double #AAFF00 !important;
+    cursor:auto !important;
+}
+.ScSelected{
+    background-color:yellow;
+}
+
+
+iframe{
+    display:none !important;
+}
+
+blockquote{
+    display:none !important;
+}
+
+script{
+    display:none !important;
+}
+
+img{
+    display:none !important;
+}
+
+.imgAjaxLoader{
+    display: inline !important;
+}

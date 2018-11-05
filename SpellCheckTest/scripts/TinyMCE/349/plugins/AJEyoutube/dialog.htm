@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>{#AJEyoutube_dlg.title}</title>
+  <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+  <script type="text/javascript" src="js/dialog.js"></script>
+  <script type="text/javascript">
+      function GetYoutube() {
+          window.open('/Resource_Gallery/youtube.htm?img1=AJEyoutubeID&img2=PreImageURL', 'YoutubeWindow', 'menubar=0,resizable=1,width=950,height=690');
+      }
+      function GetPlaylist() {
+          document.getElementById('rbPlaylist').checked = true;
+          SetSize(565, 640);
+          window.open('/ServicesAdministration/Misc/AFP.aspx', 'AFP3D', 'menubar=0,resizable=1,width=950,height=690');  
+      }
+      function SetSize(mwidth, mheight) {
+          document.getElementById('AJEyoutubeWidth').value = mwidth;
+          document.getElementById('AJEyoutubeHeight').value = mheight;
+          
+      }
+  </script>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        #AJEyoutubePlaylist
+        {
+            width: 237px;
+        }
+        #AJEPlaylistSize
+        {
+            width: 38px;
+        }
+        .style6
+        {
+            width: 31px;
+        }
+    </style>
+</head>
+<body>
+
+<form onsubmit="AJEyoutubeDialog.insert();return false;" action="#">
+  <p>{#AJEyoutube_dlg.instr}</p>
+
+
+
+
+    <table class="style1">
+        <tr>
+            <td class="style6">  
+                <input id="rbSingle" checked="checked" type="radio" name="Rb" /></td>
+            <td>  <div class="mceActionPanel">
+    <div style="height:80px;float: left">
+    <div style="float: left">
+      {#AJEyoutube_dlg.ytID} <input id="AJEyoutubeID" name="AJEyoutubeID" type="text" 
+            class="text" size="20" value="" />
+    <br />
+   {#AJEyoutube_dlg.ytImage} <input id="PreImageURL" name="PreImageURL" type="text" 
+            class="text" size="11" value="" />
+   <br /><br />
+   {#AJEyoutube_dlg.ytEmbedCode} <input id="NoEmbedCode" type="checkbox" name="NoEmbedCode" checked="true" />
+    <br />
+   {#AJEyoutube_dlg.ytControls} <input id="NoControlBar" type="checkbox" name="NoControlBar" />
+    </div>
+
+    <div style="float: left">
+        <img id="browseYT" src="img/YTGallery.png" onclick="GetYoutube();" style="cursor:pointer;" />
+
+    </div>
+    </div>
+    
+    <div style="float: right">
+    
+        <input type="radio" name="Size" value="0" onclick="SetSize(560,340);">560 x 340
+        <input type="radio" name="Size" value="1" checked="checked" onclick="SetSize(565,340);">565 x 340<br />
+        <input type="radio" name="Size" value="2" onclick="SetSize(270,180);">270 x 180
+        <input type="radio" name="Size" value="3" onclick="SetSize(315,205);">315 x 205<br />
+        <input type="radio" name="Size" value="4" onclick="SetSize(156,90);">156 x 90&nbsp;&nbsp;
+        <input type="radio" name="Size" value="41" onclick="SetSize(680,410);">680 x 410<br />
+
+      {#AJEyoutube_dlg.ytW} <input id="AJEyoutubeWidth" name="AJEyoutubeWidth" type="text" class="text" size="2" value="680" />&nbsp;
+      {#AJEyoutube_dlg.ytH} <input id="AJEyoutubeHeight" name="AJEyoutubeHeight" type="text" class="text" size="2" value="410" />
+    </div>
+  </div>
+<br />
+  <div class="mceActionPanel">
+    
+    <div style="float:right;padding-top:23px">
+     &nbsp;
+    </div>
+  </div>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style6">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style6" valign="middle">
+                <input id="rbPlaylist" type="radio" name="Rb" onclick="SetSize(565,640);"/></td>
+            <td>
+                
+                <table class="style1">
+                    <tr>
+                        <td width="10%">
+                Playlist</td>
+                        <td align="left" width="40%">
+                <input id="AJEPlaylist" name="AJEPlaylist" type="text" 
+            class="text" size="40" value="" /></td>
+                        <td align="left" width="5%">
+        <img id="browseYT0" src="img/YTGallery.png" onclick="GetPlaylist();" 
+                    style="cursor:pointer;" /></td>
+                        <td width="5%">
+                            &nbsp;</td>
+                        <td width="10%">Size</td>
+                        <td align="left" width="20%">
+                <input id="AJEPlaylistSize" name="AJEPlaylistSize" type="text" 
+            class="text" size="11" value="300" /></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="style6">
+                &nbsp;</td>
+            <td align="right">
+     <input type="button" id="insert" name="insert" value="{#insert}" onclick="AJEyoutubeDialog.insert();" />&nbsp;
+      <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" /></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
